@@ -1,3 +1,74 @@
+@import url(https://fonts.google.com/specimen/Karla);
+
 @media screen and (max-width:320px) {
-    
-  }
+    .first-div {
+    }
+
+    .second-div {
+      background-color: red;
+    }
+
+    .third-div {
+      background-color: yellow;
+    }
+}
+
+body {
+  background-color: hsl(204, 43%, 93%);
+  font-size: 16px;
+  font-family: 'Karla', sans-serif;
+}
+
+.container {
+  box-sizing: border-box;
+  width: 80%;
+  margin: auto;
+  margin-top: -25%;
+  border-radius: 6px;
+  box-shadow: 1px 1px 25px hsl(218, 22%, 67%);
+  background-color: #fff;
+}
+
+.first-div {
+  margin-top: 25%;
+  margin-bottom: 0;
+  font-size: 16px;
+}
+
+.first-inner-div {
+  box-sizing: border-box;
+  width: 90%;
+  margin: auto;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.first-inner-div h1 {
+  font-size: 24px;
+  color: hsl(179, 62%, 43%);
+}
+
+
+.first-inner-div h2 {
+  font-size: 18px;
+  color: hsl(71, 73%, 54%);
+}
+
+.first-inner-div p {
+  font-size: 15px;
+  color: hsl(218, 22%, 67%);
+}
+
+.second-div {
+  display: inline-block;
+  width: 50%;
+  background-color: red;
+  margin-top: 0;
+}
+
+.third-div {
+  display: inline-block;
+  background-color: yellow;
+  height: 25%;
+  width: 49%;
+}
