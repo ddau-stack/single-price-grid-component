@@ -1,74 +1,70 @@
-@import url(https://fonts.google.com/specimen/Karla);
+@import url('https://fonts.google.com/specimen/Karla');
 
-@media screen and (max-width:320px) {
-    .first-div {
-    }
-
-    .second-div {
-      background-color: red;
-    }
-
-    .third-div {
-      background-color: yellow;
-    }
+/* override browser default */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
+/* use viewport-relative units to cover page fully */
 body {
-  background-color: hsl(204, 43%, 93%);
+  height: 100vh;
+  width: 100vw;
+}
+
+* {
+  box-sizing: border-box;
   font-size: 16px;
   font-family: 'Karla', sans-serif;
+  color: #e5e5e5;
 }
 
-.container {
-  box-sizing: border-box;
-  width: 80%;
-  margin: auto;
-  margin-top: -25%;
-  border-radius: 6px;
-  box-shadow: 1px 1px 25px hsl(218, 22%, 67%);
-  background-color: #fff;
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(8, 1fr);
+  height: 50%;
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 5%;
+  margin-bottom: 0;
 }
 
 .first-div {
-  margin-top: 25%;
-  margin-bottom: 0;
-  font-size: 16px;
+  grid-column-start: 1;
+  grid-column-end: 9;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  background-color: hsl(204, 43%, 93%);
 }
 
-.first-inner-div {
-  box-sizing: border-box;
-  width: 90%;
-  margin: auto;
-  padding-top: 5%;
-  padding-bottom: 5%;
-}
-
-.first-inner-div h1 {
-  font-size: 24px;
+.first-div h1 {
   color: hsl(179, 62%, 43%);
 }
 
-
-.first-inner-div h2 {
-  font-size: 18px;
+.first-div h2 {
   color: hsl(71, 73%, 54%);
 }
 
-.first-inner-div p {
-  font-size: 15px;
-  color: hsl(218, 22%, 67%);
+.first-div p {
+  color: #666;
 }
 
 .second-div {
-  display: inline-block;
-  width: 50%;
-  background-color: red;
-  margin-top: 0;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 6;
+  background-color: hsl(179, 62%, 43%);
 }
 
 .third-div {
-  display: inline-block;
-  background-color: yellow;
-  height: 25%;
-  width: 49%;
+  grid-column-start: 5;
+  grid-column-end: 9;
+  grid-row-start: 3;
+  grid-row-end: 6;
+  background-color: hsl(179, 47%, 60%);
 }
