@@ -21,6 +21,16 @@ body {
   color: #e5e5e5;
 }
 
+button {
+  display: inline-block;
+  background-color: hsl(71, 73%, 54%);
+  box-shadow: none;
+  border: none;
+  width: 92%;
+  height: 3vw;
+  border-radius: 5px;
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -41,15 +51,23 @@ body {
   background-color: hsl(204, 43%, 93%);
 }
 
-.first-div h1 {
+.first-center-container {
+  margin: auto;
+  margin-top: 5%;
+}
+
+.first-center-container h1 {
   color: hsl(179, 62%, 43%);
+  margin-left: 6%;
+  margin-top: 5%;
 }
 
-.first-div h2 {
+.first-center-container h2 {
   color: hsl(71, 73%, 54%);
+  margin-left: 6%;
 }
 
-.first-div p {
+.first-center-container pre {
   color: #666;
 }
 
@@ -61,10 +79,53 @@ body {
   background-color: hsl(179, 62%, 43%);
 }
 
+.second-center-container {
+  width: 74%;
+  margin: auto;
+  margin-top: 12%;
+  padding-bottom: 10%;
+}
+
+.second-center-container h1 {
+  margin-bottom: -3%;
+}
+
+.second-center-container h2 {
+  font-size: 32px;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: -10%;
+}
+
+.second-center-container p {
+  margin-bottom: 10%;
+}
+
+#per-month-text {
+  display: inline-block;
+  margin: auto;
+}
+
 .third-div {
   grid-column-start: 5;
   grid-column-end: 9;
   grid-row-start: 3;
   grid-row-end: 6;
   background-color: hsl(179, 47%, 60%);
+}
+
+.third-center-container {
+  margin-top: 10%;
+}
+
+.third-center-container h1 {
+  margin-left: 8%;
+  margin-bottom: 10%;
+}
+
+.third-center-container pre {
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
 }
