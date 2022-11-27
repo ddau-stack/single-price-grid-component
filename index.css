@@ -1,0 +1,70 @@
+:root {
+  --clr-teal: hsl(179, 62%, 43%);
+  --clr-bright-yellow: hsl(71, 73%, 54%);
+  --clr-light-gray: hsl(204, 43%, 93%);
+  --clr-grayish-blue: hsl(218, 22%, 67%);
+}
+
+body {
+  font-size: 16px;
+  color: white;
+  min-height: 100vh;
+  background-color: var(--clr-light-gray);
+  font-family: 'Karla', sans-serif;
+}
+
+.text-teal {
+  color: var(--clr-teal);
+}
+
+.text-white {
+  color: white;
+}
+
+.text-bright-yellow {
+  color: var(--clr-bright-yellow);
+}
+
+.text-light-gray {
+  color: var(--clr-light-gray);
+}
+
+.text-grayish-blue {
+  color: var(--clr-grayish-blue);
+}
+
+.bg-bright-yellow {
+  background-color: var(--clr-bright-yellow);
+}
+
+.bg-teal {
+  background-color: var(--clr-teal);
+}
+
+.bg-light-teal {
+  background-color: hsl(179 62% 43% / 0.7);
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.list-group {
+  list-style-type: none;
+}
+
+.btn:hover {
+  background-color: hsl(71 73% 54% / 0.8);
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    margin: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 991px) {
+  .container {
+    max-width: 45%;
+  }
+}

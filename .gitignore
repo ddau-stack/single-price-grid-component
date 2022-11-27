@@ -3,3 +3,6 @@
 /single-price-grid-component-master/
 *.md
 *.jpg
+
+.vscode
+.gitignore
